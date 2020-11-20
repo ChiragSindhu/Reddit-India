@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "stylesheet.css">
+    <script src = "script.js"></script>
+    <title>Ask A Question</title>
+</head>
+<body>
+    <div class = "navbar">
+        <div id = "heading">
+            Ask Your Question Here
+        </div>
+    </div>
+    <div class = "question">
+        Question:
+        <textarea id = "txt_area" maxlength = "255"></textarea>
+        Description (optional):
+        <textarea id = "txt_area_desc" maxlength = "4294967295"></textarea>
+        <input type = "button" id = "send_btn" value = "Ask" onclick = "addQuestion()">
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src = "script.js"></script>
+    <link rel = "stylesheet" href = "stylesheet.css">
+
+    <title>Reddit India</title>
+</head>
+<body>
+    <div class = "navbar">
+        <div id = "heading">
+            Reddit India
+        </div>
+        <div id = "userComp"></div>
+    </div>
+    <div class = "questions">
+        <div id = "quest_txt">
+            Questions
+            <input type = "text" placeholder = "Type Id... or Question" id = "search_txt" onkeyup = "keyPressed()" onkeydown = "keyPressed()">
+            <select name = "IDTYPE" id = "id_txt_type" onchange = "keyPressed()">
+                <option value = "ID">Id</option>
+                <option value = "QUESTION">Question</option>
+              </select>
+        </div>
+        <div id = "navComp">
+            <div class = "HOME"><a href = "../Intro/Intro.html">Home</a></div>
+            <div class = "AskQuestion"><a href = "../Ask A Question/askQuestion.html">Ask Question</a></div>
+            <div class = "Login"><a href = "../Login/login.html">Log Out</a></div>
+            <div class = "Register"><a href = "../Register/Register.html">Register</a></div>
+        </div>
+    </div>
+    
+    <div id = "ques">
+            
+    </div>
+</body>
+</html>

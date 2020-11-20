@@ -1,0 +1,57 @@
+.navbar {
+  margin: 0px 0px 0px;
+  width: 100%;
+  height: 70px;
+  padding-left: 0px;
+  box-shadow: 0.5px 4.5px 0.5px rgb(170, 170, 170);
+  background-color: aquamarine;
+}
+
+#heading {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px gray;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.components {
+  text-align: center;
+  padding-top: 200px;
+  font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#Password {
+  padding-bottom: 20px;
+}
+
+#Email {
+  padding-bottom: 70px;
+}
+
+#User_password,
+#User_email {
+  width: 500px;
+  height: 60px;
+  border-radius: 20px;
+  background-color: khaki;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 10px;
+}
+
+#User_login {
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  color: rgb(141, 88, 18);
+  margin-top: 10%;
+  margin-left: 45%;
+}

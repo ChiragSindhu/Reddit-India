@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel = "stylesheet" href = "stylesheet.css">
+    <script src = "script.js"></script>
+
+    <title>Register</title>
+</head>
+<body>
+    <div class = "navbar">
+        <div id = "heading">
+            Register Your Account
+        </div>
+    </div>
+    <div class = "components">
+        <div class =  "First_Name">
+            First Name
+            <input type = "text" id = "User_firstname" placeholder = "Your First Name" required>
+        </div>
+
+        <div class =  "Last_Name">
+            Last Name
+            <input type = "text" id = "User_lastname" placeholder = "Your Last Name" required>
+        </div>
+
+        <div class =  "Email">
+            E-mail
+            <input type = "email" id = "User_email" placeholder = "Your Email" required>
+        </div>
+
+        <div class =  "Password">
+            Password
+            <input type = "text" id = "User_password" required>
+        </div>
+
+        <div class =  "ConfirmPassword">
+            Confirm Password
+            <input type = "password" id = "User_confirm_password" required>
+        </div>
+
+        <input type = "button" id = "Register_Data" value = "Register" onclick = "register()">
+    </div>
+</body>
+</html>
