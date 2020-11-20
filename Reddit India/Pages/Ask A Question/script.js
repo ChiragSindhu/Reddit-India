@@ -22,7 +22,7 @@ async function addQuestionToDB(q,d,ID) {
             id:ID
         };
 
-        const response =  await fetch('http://localhost:3001/addQuestion', {
+        const response =  await fetch('/addQuestion', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

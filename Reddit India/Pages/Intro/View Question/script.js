@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         id : Question_ID
     };
 
-    var response = await fetch("http://localhost:3001/viewQuestion", {
+    var response = await fetch("/viewQuestion", {
         headers: {
             'Content-Type': 'application/json'
         },
@@ -104,7 +104,7 @@ async function sendAnswer() {
         id : Question_ID
     };
 
-    await fetch('http://localhost:3001/addAnswer', {
+    await fetch('/addAnswer', {
         headers: {
             'Content-Type': 'application/json'
         },

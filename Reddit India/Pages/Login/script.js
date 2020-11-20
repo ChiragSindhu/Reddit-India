@@ -14,7 +14,7 @@ async function login() {
     
     
     //-----URL for fetching page from backend API ---------//
-    var url = "http://localhost:3001/login";
+    var url = "/login";
 
     //Email varible to pass in backend API ------/////
     const variables = {

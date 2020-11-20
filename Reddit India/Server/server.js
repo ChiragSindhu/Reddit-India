@@ -1,18 +1,23 @@
 const express = require('express');
 const nmailer = require('nodemailer');
 const app = express();
+const path = require('path');
 
 require('dotenv').config();
 
 const cors = require('cors');
 const sqlCon = require('../Server/database/mysql_connection');
-const { response } = require('express');
 
 const port = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended : false}));
+app.use(express.static(path.resolve(__dirname, '../Pages/')));
+
+app.get('/', function(request, response) {
+    response.sendFile(path.resolve(__dirname, '../Pages/Intro/Intro.html'));
+});
 
 ///---------------------Show Questions On HomePage---------------/////
 app.get('/question', async function (request, response) { 
@@ -206,5 +211,5 @@ async function sendMail(eemail) {
 //------------------------------------------------------------//
 
 app.listen(port, function () { 
-    console.log("Server running on Port : " + port);
+    console.log("Server running on Port : " + this.address().port);
 });

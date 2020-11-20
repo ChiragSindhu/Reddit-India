@@ -11,7 +11,7 @@ async function register() {
     }
 
     if (User_password_check === User_Cpassword_check) {
-        url = "http://localhost:3001/register";
+        url = "/register";
         datatosend = {
             FirstName: User_Fname_check,
             LastName: User_Lname_check,

@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     const element = document.getElementById('ques');
 
-    const response = await fetch("http://localhost:3001/question");
+    const response = await fetch("/question");
     const DataJSON = await response.json();
     const data = DataJSON.data;
 
